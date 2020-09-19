@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:title="@string/open" android:id="@+id/open"/>
-    <item android:title="@string/rename" android:id="@+id/rename"/>
-    <item android:title="@string/delete" android:id="@+id/delete"/>
-    <item android:title="@string/copy_url" android:id="@+id/copy_url"/>
-    <item android:title="@string/share" android:id="@+id/share"/>
-</menu>
