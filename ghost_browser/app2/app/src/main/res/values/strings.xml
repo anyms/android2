@@ -1,0 +1,21 @@
+<resources>
+    <string name="banner_1">ca-app-pub-1517962596069817/3873117120</string>
+    <!-- Test ID -->
+    <!--    <string name="banner_1">ca-app-pub-3940256099942544/6300978111</string>-->
+
+    <string name="app_name">Ghost</string>
+
+    <string name="auth_error_message">VPN disconnected \uD83D\uDE1F</string>
+    <string name="next">Next</string>
+
+    <string name="start">Start</string>
+    <string name="how_it_works">How it works?</string>
+    <string name="app_explain_message">
+        The VPN on this app does not affect any other app on your mobile, It will only route the internet traffic of this app through a VPN. See the next page if you want a free VPN app for your mobile.
+    </string>
+    <string name="ghost_vpn_explain_message">
+        Download the Ghost VPN app to get free high speed VPNs for your mobile.
+    </string>
+    <string name="get_it">Get it (Beta)</string>
+    <string name="connecting">Connecting…</string>
+</resources>

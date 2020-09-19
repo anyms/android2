@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="app.spidy.cyberwire">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="com.android.vending.BILLING"/>
+
+
+    <application
+        android:name="app.spidy.cyberwire.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:configChanges="orientation|keyboard|keyboardHidden|screenLayout|screenSize"
+            android:name="app.spidy.cyberwire.activities.SearchActivity"/>
+        <activity
+            android:name="app.spidy.cyberwire.activities.ChannelActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenLayout|screenSize" />
+        <activity
+            android:name="app.spidy.cyberwire.activities.PlayerActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenLayout|screenSize"
+            android:theme="@style/AppTheme.Dark" />
+        <activity
+            android:name="app.spidy.cyberwire.activities.MainActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenLayout|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="app.spidy.cyberwire.services.PlayerService" />
+        <service android:name="app.spidy.cyberwire.services.DownloadService" />
+        <service
+            android:name="app.spidy.cyberwire.services.FCM"
+            android:directBootAware="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_subscribe_notification" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-1517962596069817~4726151919"/>
+    </application>
+
+</manifest>

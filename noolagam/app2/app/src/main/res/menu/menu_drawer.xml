@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/ic_home"
+        android:title="@string/home"
+        android:id="@+id/navHome"/>
+    <item
+        android:icon="@drawable/ic_history"
+        android:title="@string/recently_read"
+        android:id="@+id/navRecent"/>
+    <item
+        android:icon="@drawable/ic_storage"
+        android:title="@string/downloads"
+        android:id="@+id/navDownloads"/>
+
+<!--    <item android:title="@string/communication">-->
+<!--        <menu>-->
+<!--            <item-->
+<!--                android:icon="@drawable/ic_email"-->
+<!--                android:title="@string/send_email"-->
+<!--                android:id="@+id/navSendEmail"/>-->
+<!--            <item-->
+<!--                android:icon="@drawable/ic_book"-->
+<!--                android:title="@string/request_book"-->
+<!--                android:id="@+id/navRequestBook"/>-->
+<!--            <item-->
+<!--                android:icon="@drawable/ic_send"-->
+<!--                android:title="@string/submit_book"-->
+<!--                android:id="@+id/navSendBook"/>-->
+<!--        </menu>-->
+<!--    </item>-->
+    <item android:title="@string/others">
+        <menu>
+            <item
+                android:icon="@drawable/ic_share"
+                android:title="@string/feedback"
+                android:id="@+id/navFeedback"/>
+            <item
+                android:icon="@drawable/ic_feedback"
+                android:title="@string/share"
+                android:id="@+id/navShare"/>
+        </menu>
+    </item>
+</menu>

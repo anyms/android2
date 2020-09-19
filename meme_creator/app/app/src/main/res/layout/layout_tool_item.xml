@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:id="@+id/toolRootView"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:id="@+id/toolImageView"
+        android:layout_width="75dp"
+        android:layout_height="35dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/ic_brush"
+        android:contentDescription="@string/brush_icon" />
+
+    <TextView
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:id="@+id/toolTitleView"
+        android:textAlignment="center"
+        android:textColor="@color/colorSemiWhite"
+        android:text="@string/brush"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div id="blockly-div"></div>
+    
+    <script src="libs/blockly_compressed.js"></script>
+    <script src="libs/blocks_compressed.js"></script>
+    <script src="libs/javascript_compressed.js"></script>
+    <script src="libs/en.js"></script>
+    <script src="js/toolbox.js"></script>
+
+    <script>
+		var _spidy = {};
+        _spidy.stack = {};
+        _spidy.variable_counter = 1;
+        _spidy.last_block_id = null;
+        _spidy.isSaved = false;
+        
+        Blockly.HSV_SATURATION = 0.75;
+
+        var workspace = Blockly.inject('blockly-div', {
+            media: 'media/',
+            toolbox: BLOCKLY_TOOLBOX_XML['standard'],
+            zoom: {controls: true},
+            move: {
+                drag: true,
+                wheel: false
+            }
+        });
+
+
+        function generateJson() {
+            var s = "";
+            var code = Blockly.JavaScript.workspaceToCode(workspace).split("\n");
+            for (var i = 0; i < code.length; i++) {
+                if (!code[i].startsWith("var ") && code[i].trim() !== "") {
+                    s += code[i];
+                }
+            }
+            s = s.substring(0, s.length - 1);
+            s = "[" + s + ", " + _spidy.variable_counter + "]";
+            return JSON.stringify(eval(s));
+        }
+
+        function updateLastBlock(s) {
+            if (s === null) {
+                var block = workspace.getBlockById(_spidy.last_block_id);
+                block.dispose();
+            } else {
+                var selector = atob(s);
+                _spidy.stack[_spidy.last_block_id] = selector;
+                return selector;
+            }
+        }
+
+        function generateCode() {
+            var tmp = document.createElement("div");
+            tmp.appendChild(Blockly.Xml.workspaceToDom(workspace));
+
+            var dat = "==CODE_START==\n";
+            dat += btoa(generateJson());
+            dat += "\n==CODE_END==\n";
+            dat += "==ELEMENTS_START==\n";
+            dat += btoa(JSON.stringify(_spidy.stack));
+            dat += "\n==ELEMENTS_END==\n";
+            dat += "==WORKSPACE_START==\n"
+            dat += btoa(tmp.innerHTML);
+            dat += "\n==WORKSPACE_END==\n";
+
+            _spidy.isSaved = true;
+            return dat;
+        }
+
+        function updateWorkspace(xml, stack, last_var_count) {
+            _spidy.variable_counter = last_var_count;
+            _spidy.stack = JSON.parse(atob(stack));
+            Blockly.Xml.domToWorkspace(Blockly.Xml.textToDom(atob(xml)), workspace);
+        }
+
+        workspace.addChangeListener(function(e) {
+            if (e.element === "dragStart") {
+                workspace.getToolbox().width = 0;
+                workspace.deleteAreaToolbox_.right = 0;
+                document.querySelector(".blocklyToolboxDiv").style.display = "none";
+            }
+
+            if (e.element == "selected" && e.group == "" && e.oldValue != null && e.newValue != null) {
+                var block = workspace.getBlockById(e.oldValue);
+                if (block.type === "get_html_elements" && _spidy.stack[e.newValue] == undefined) {
+                    _spidy.stack[e.newValue] = _spidy.stack[e.oldValue];
+                }
+            }
+            
+            var block = workspace.getBlockById(e.blockId);
+            if (e.varName !== undefined) {
+                _spidy.variable_counter++;
+            }
+
+			if (e.element === "dragStop" && _spidy.stack[e.blockId] === undefined) {
+				try {
+                    var block = workspace.getBlockById(e.blockId);
+                    _spidy.last_block_id = block.id;
+                    _spidy.stack[e.blockId] = "";
+                    if (block.type === "get_html_elements") {
+                        spidy.openBrowser();
+                    }
+                } catch(e) {}
+            }
+        });
+
+        var toolboxWidth = workspace.getToolbox().width;
+        document.querySelector(".blocklyToolboxDiv").style.display = "none";
+        workspace.getToolbox().width = 0;
+        workspace.deleteAreaToolbox_.right = 0;
+
+        _spidy.toggleToolbox = function() {
+            if (workspace.getToolbox().width === 0) {
+                workspace.getToolbox().width = toolboxWidth;
+                document.querySelector(".blocklyToolboxDiv").style.display = "block";
+            } else {
+                workspace.getToolbox().width = 0;
+                workspace.deleteAreaToolbox_.right = 0;
+                document.querySelector(".blocklyToolboxDiv").style.display = "none";
+            }
+        };
+
+    </script>
+
+    <script src="js/custom_blocks.js"></script>
+    <script src="js/reset.js"></script>
+
+    <script>
+        if (localStorage.getItem("xml") !== null) {
+            Blockly.Xml.domToWorkspace(Blockly.Xml.textToDom(localStorage.getItem("xml")), workspace);
+        }
+    </script>
+</body>
+</html>

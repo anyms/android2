@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting Started</title>
+    <script>
+        var fitVideos = {};
+        fitVideos.selectors = [
+            'iframe[src*="player.vimeo.com"]',
+            'iframe[src*="youtube.com"]',
+            'iframe[src*="youtube-nocookie.com"]',
+            'iframe[src*="kickstarter.com"][src*="video.html"]',
+            'object',
+            'embed'
+            ];
+        // mselect all iframes, or mebeded videos
+        fitVideos.init = function () {
+            for (var j = 0; j < this.selectors.length; j++) {
+                var nodesToWrap = document.querySelectorAll(this.selectors[j]);
+                console.log(nodesToWrap);
+                var addedToDocument = false;
+
+                // wrappign iframes with a div
+                for (var index = 0; index < nodesToWrap.length; index++) {
+                var wrapper = document.createElement("div");
+                wrapper.className = "fitVideosClass";
+                    var node = nodesToWrap[index];
+                    node.style.width = "100%";
+                    node.style.height = "100%";
+                    node.style.position = "absolute";
+                    node.style.top = "0";
+                    node.style.left = "0";
+                    node.parentNode.insertBefore(wrapper, node);
+                    addedToDocument = true;
+                    node.parentNode.removeChild(node);
+                    wrapper.appendChild(node);
+                }
+
+                var iframes = document.getElementsByClassName('fitVideosClass');
+                for (var i = 0; i < iframes.length; i++) {
+                    for (var k = 0; k < nodesToWrap.length; k++) {
+                        // calculate the aspect ratio & getting the right padding
+                        var padding = (nodesToWrap[k].height / nodesToWrap[k].width) * 100;
+                        console.log(padding);
+                        iframes[i].style.position = "relative";
+                        /* 16:9 = (9/16 * 100) = 56.25 */
+                        iframes[i].style.paddingBottom = padding + "%";
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Open Sans", sans-serif;
+            text-align: center;
+            background-color: #1B1F22;
+            color: #ffffff;
+        }
+        h1 {
+            padding: 20px;
+            font-size: 1.6rem;
+        }
+        p {
+            padding: 20px;
+            font-size: 1.4rem;
+        }
+        button {
+            background-color: #00AB64;
+            border: none;
+            max-width: 100%;
+            padding: 15px 60px;
+            font-size: 1rem;
+            color: #ffffff;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <br><br>
+        <h1>Getting Started</h1>
+        <br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/cLVrkMzx6us" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br>
+        <p>If you don't know what is Spidy and how to create a web automation script, please watch the getting started video.</p>
+        <br><br>
+        <button id="start">START</button>
+        <br><br><br><br>
+    </div>
+
+    <script>
+        fitVideos.init();
+        document.querySelector("#start").addEventListener("click", function() {
+            spidy.start();
+        }, false);
+    </script>
+</body>
+</html>

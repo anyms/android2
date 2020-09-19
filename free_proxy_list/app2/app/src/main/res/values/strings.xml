@@ -1,0 +1,15 @@
+<resources>
+    <string name="banner_1">ca-app-pub-1517962596069817/8413817731</string>
+    <!-- ADS IDS -->
+<!-- <string name="banner_1">ca-app-pub-3940256099942544/6300978111</string> -->
+
+    <string name="app_name">Free Proxy List</string>
+    <string name="ip_address">IP Address</string>
+    <string name="dash">-</string>
+    <string name="anonymity">Anonymity</string>
+    <string name="google_passed">Google Passed</string>
+    <string name="ssl_support">SSL Support</string>
+    <string name="port">Port</string>
+    <string name="country">Country</string>
+    <string name="country_code">Country Code</string>
+</resources>

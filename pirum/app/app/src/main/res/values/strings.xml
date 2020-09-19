@@ -1,0 +1,49 @@
+<resources>
+    <!-- Banner Ad IDs -->
+    <string name="banner_1">ca-app-pub-1517962596069817/2714651577</string>
+    <!-- Test ID -->
+<!--    <string name="banner_1">ca-app-pub-3940256099942544/6300978111</string>-->
+
+    <string name="app_name">Pirum</string>
+    <string name="stop">Stop</string>
+    <string name="start">Start</string>
+    <string name="restart">Restart</string>
+    <string name="can_t_play_this_video">Can\'t play this video</string>
+    <string name="can_t_play_this_audio">Can\'t play this audio</string>
+    <string name="channel_description">Pyrum music player</string>
+    <string name="channel_name">Pyrum Channel</string>
+    <string name="close">Close</string>
+    <string name="open">Open</string>
+    <string name="downloads">Downloads</string>
+    <string name="playlist_image">playlist image</string>
+    <string name="option_menu_icon">option menu icon</string>
+    <string name="rename">Rename</string>
+    <string name="delete">Delete</string>
+    <string name="share">Share…</string>
+    <string name="open_with">Open with…</string>
+    <string name="explorer">Explorer</string>
+    <string name="music">Music</string>
+    <string name="video">Video</string>
+    <string name="images">Images</string>
+    <string name="others">Others</string>
+    <string name="nothing_to_show">Nothing to show</string>
+    <string name="play_all">Play All</string>
+    <string name="feedback">Feedback</string>
+    <string name="report_bugs">Report Bugs</string>
+    <string name="request_feature">Request Feature</string>
+    <string name="copy_url">Copy URL</string>
+    <string name="browser">Browser</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="open_as_video_s">Open as Video(s)</string>
+    <string name="open_last_video">Open Last Video</string>
+    <string name="open_as_music">Open as Music</string>
+    <string name="open_last_music">Open Last Music</string>
+    <string name="upgrade_message">please upgrade to unlock the downloading feature and enjoy the ad-free experience. This is a one time purchase.</string>
+    <string name="upgrade">Upgrade</string>
+    <string name="next">Next</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="getting_started">Getting Started</string>
+    <string name="installation">Installation</string>
+    <string name="connect_your_smartphone">Connect Your Smartphone</string>
+</resources>

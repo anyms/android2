@@ -1,0 +1,21 @@
+<resources>
+
+    <style name="TextView">
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_marginEnd">20dp</item>
+    </style>
+
+    <style name="BrowserTheme.DialogTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="FullScreenDialogTheme" parent="android:Theme.DeviceDefault.Light.NoActionBar"/>
+
+    <style name="SlideUpAndDownAnimationTheme">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+
+</resources>

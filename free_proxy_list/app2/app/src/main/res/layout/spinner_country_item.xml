@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:gravity="center"
+              android:padding="10dp"
+              android:layout_height="wrap_content">
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp" app:srcCompat="@drawable/globe_icon" android:id="@+id/flagImage"
+            android:adjustViewBounds="true" android:scaleType="fitCenter"/>
+    <TextView
+            android:textColor="@color/colorBlack"
+            android:textSize="17sp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="Australia"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" android:id="@+id/countryName" android:layout_weight="1"/>
+</LinearLayout>

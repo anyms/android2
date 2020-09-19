@@ -1,0 +1,24 @@
+<resources>
+    <!-- Banner Ad IDs -->
+    <string name="banner_1">ca-app-pub-1517962596069817/7259560928</string>
+    <!-- Test ID -->
+<!--    <string name="banner_1">ca-app-pub-3940256099942544/6300978111</string>-->
+
+    <string name="app_name">Wiki Reader</string>
+    <string name="aa">Aa</string>
+    <string name="wikipedia">Wikipedia</string>
+    <string name="settings">Settings</string>
+    <string name="feedback">Feedback</string>
+    <string name="share">Share…</string>
+    <string name="apply">Apply</string>
+    <string name="cancel">Cancel</string>
+    <string name="select_a_language">Select a Language</string>
+    <string name="ok">OK</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="upgrade">Remove Ads</string>
+    <string name="support_me_by_upgrading_and_enjoy_the_ad_free_experience">Support me by upgrading, and enjoy the ad-free experience</string>
+    <string name="ask_the_wikipedia_in_your_own_language_using_your_voice_or_text">Ask the wikipedia in your own language using your voice or text</string>
+    <string name="know_the_unknown">Know the unknown</string>
+    <string name="channel_description">Wiki Reader Channel</string>
+    <string name="use_the_human_friendly">Use the human friendly synthesized audio output. Only available for few languages\n\nRequired an internet connection</string>
+</resources>

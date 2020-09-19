@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menuConfigure"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/configure"/>
+
+    <item
+        android:title="@string/feedback"
+        android:id="@+id/menuFeedback"/>
+
+    <item
+        android:title="@string/share"
+        android:id="@+id/menuShare"/>
+
+    <item
+        android:title="@string/upgrade"
+        android:id="@+id/menuUpgrade"/>
+</menu>

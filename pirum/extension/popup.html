@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+
+    <div id="controls">
+        <span class="indicator offline">Offline</span>
+        <span class="space"></span>
+        <button id="connectBtn">Connect</button>
+    </div>
+    <div id="wrap">
+        <button class="menuItem" data-action="open">Open</button>
+        <button class="menuItem" data-action="read">Open to Read</button>
+        <button class="menuItem detect" data-action="video"><span class="content">Open as Video(s)</span> <span class="count">0</span></button>
+        <button class="menuItem detect" data-action="last-video">Open Last Video</button>
+        <button class="menuItem detect" data-action="music"><span class="content">Open as Music</span> <span class="count">0</span></button>
+        <button class="menuItem detect" data-action="last-music">Open Last Music</button>
+        <button class="menuItem detect-images" data-action="images"><span class="content">Open Images</span> <span class="count">0</span></button>
+    </div>
+
+    <script src="libs/domlang.min.js"></script>
+    <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="@string/home"
+        android:id="@+id/menuHome"
+        android:icon="@drawable/ic_home"/>
+    <item
+        android:title="@string/your_gifs"
+        android:id="@+id/menuYourGifs"
+        android:icon="@drawable/ic_gif"/>
+    <item
+        android:title="@string/your_memes"
+        android:id="@+id/menuYourMemes"
+        android:icon="@drawable/ic_image"/>
+
+    <group>
+        <item
+            android:title="@string/others">
+            <menu>
+                <item
+                    android:icon="@drawable/ic_feedback"
+                    android:title="@string/feedback"
+                    android:id="@+id/menuFeedback"/>
+                <item
+                    android:icon="@drawable/ic_share"
+                    android:title="@string/share"
+                    android:id="@+id/menuShare"/>
+            </menu>
+        </item>
+    </group>
+
+</menu>

@@ -1,0 +1,3 @@
+include ':browser'
+include ':app'
+rootProject.name = "Spidy"

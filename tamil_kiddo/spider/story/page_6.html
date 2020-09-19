@@ -1,0 +1,32 @@
+<div class="page-container-landscape story-page tamil" id="storyReader">
+<div class="sp_h_text_overlay1 has_illustration illustration">
+<img class="responsive_illustration" data-size1-src="https://storage.googleapis.com/story-weaver-e2e-production/illustration_crops/87899/size1/9e54ca44b7687ca15586d121b06ebfee.jpg" data-size2-src="https://storage.googleapis.com/story-weaver-e2e-production/illustration_crops/87899/size2/9e54ca44b7687ca15586d121b06ebfee.jpg" data-size3-src="https://storage.googleapis.com/story-weaver-e2e-production/illustration_crops/87899/size3/9e54ca44b7687ca15586d121b06ebfee.jpg" data-size4-src="https://storage.googleapis.com/story-weaver-e2e-production/illustration_crops/87899/size4/9e54ca44b7687ca15586d121b06ebfee.jpg" data-size5-src="https://storage.googleapis.com/story-weaver-e2e-production/illustration_crops/87899/size5/9e54ca44b7687ca15586d121b06ebfee.jpg" data-size6-src="https://storage.googleapis.com/story-weaver-e2e-production/illustration_crops/87899/size6/9e54ca44b7687ca15586d121b06ebfee.jpg" data-size7-src="https://storage.googleapis.com/story-weaver-e2e-production/illustration_crops/87899/size7/9e54ca44b7687ca15586d121b06ebfee.jpg" src="https://storage.googleapis.com/story-weaver-e2e-production/illustration_crops/87899/size4/9e54ca44b7687ca15586d121b06ebfee.jpg"/>
+</div>
+
+<div class="true pb-dictionary-tool-tip--padding" id="pb-dictionary-tool-tip"></div>
+<div class="text-font-normal tamil sp_h_text_overlay1 content" dir="auto">
+<p class="wysiwyg-text-align-center"><span class="text-font-medium"><span class="text-font-normal"><b>விளையாடும்பொழுது நாம் பயன்படுத்துபவை </b></span><br/><span class="text-font-normal"><br/></span></span></p><p class="wysiwyg-text-align-center"><span class="text-font-medium"><span class="text-font-normal"><b>விசை:</b> ஒரு இழுப்போ தள்ளலோ நமக்கு, வேகமாகவோ மெதுவாகவோ செல்லவும் நிற்கவும் அல்லது வடிவத்தை மாற்றவும்கூட உதவுகிறது.</span></span></p>
+</div>
+
+
+
+<script>
+    const reader = document.querySelector("#storyReader");
+    const texts = document.querySelectorAll(".newStories");
+    const offsetTop = texts[1].offsetTop + texts[1].clientHeight;
+    const bottom = reader.clientHeight - offsetTop;
+    console.log("offsetTop", offsetTop);
+    console.log("bottom", bottom);
+
+    if (bottom < 0) {
+        texts[1].style.top = "auto";
+        texts[1].style.bottom = "10px";
+    }
+    </script><link href="style.css" rel="stylesheet"/><style>
+    @media only screen and (min-width: 960px) {
+        .page-container-landscape {
+            width: inherit;
+            height: inherit;
+        }
+    }
+    </style></div>

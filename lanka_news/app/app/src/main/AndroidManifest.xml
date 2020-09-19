@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="app.spidy.lankanews">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:configChanges="orientation|keyboard|keyboardHidden|screenLayout|screenSize"
+            android:name=".activities.BookmarkActivity"/>
+        <activity
+            android:name=".activities.SearchActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenLayout|screenSize" />
+        <activity
+            android:name=".activities.ReaderActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenLayout|screenSize" />
+        <activity
+            android:name=".activities.LanguageSelectActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenLayout|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.MainActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenLayout|screenSize" />
+
+        <service
+            android:name=".services.FCM"
+            android:directBootAware="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_notification" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-1517962596069817~5871042736" />
+    </application>
+
+</manifest>

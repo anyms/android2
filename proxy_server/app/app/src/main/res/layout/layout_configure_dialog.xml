@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:padding="20dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:fontFamily="@font/oswald_regular"
+        android:textColor="@color/colorGray"
+        android:textSize="18sp"
+        android:paddingBottom="20dp"
+        android:text="Use the following address to connect to the proxy depending on your circumstances"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:fontFamily="@font/oswald_regular"
+        android:textColor="@color/colorGray"
+        android:textSize="18sp"
+        android:paddingBottom="20dp"
+        android:text="Use the remote address only if you have port forwarding enabled."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/localIpView"
+        android:fontFamily="@font/oswald_light"
+        android:textColor="@color/colorGray"
+        android:textSize="18sp"
+        android:text="Local IP: -"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/remoteIpView"
+        android:fontFamily="@font/oswald_light"
+        android:textColor="@color/colorGray"
+        android:textSize="18sp"
+        android:text="Remote IP: -"
+        android:layout_width="match_parent"
+        android:paddingBottom="20dp"
+        android:layout_height="wrap_content"/>
+
+    <app.spidy.chaiui.ChaiEditText
+        android:id="@+id/portField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter a port number"
+        android:inputType="number"
+        app:chai_background="#eee"
+        app:chai_paddingBottom="10dp"
+        app:chai_paddingEnd="20dp"
+
+        app:chai_paddingStart="20dp"
+        app:chai_paddingTop="10dp"
+        app:chai_radius="20dp" />
+
+</LinearLayout>

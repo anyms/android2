@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #212529;
+}
+.blocklySvg {
+    background-color: #212529;
+}
+.blocklyMainBackground {
+    stroke: #212529;
+}
+.blocklyMainWorkspaceScrollbar {
+    display: none;
+}
+
+
+img {
+    position: relative;
+}
+
+
+#blockly-div {
+    border: 0;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: fixed;
+}
+.blocklyTreeRow {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    height: 40px;
+}
+
+.blocklyTreeIcon {
+    width: 30px;
+}
+
+
+
+.blocklyToolboxDiv.blocklyNonSelectable {
+    padding: 20px;
+    box-shadow: 5px 0 10px -5px rgba(0,0,0,0.2);
+}

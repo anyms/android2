@@ -1,0 +1,63 @@
+<resources>
+    <!-- Banner Ad IDs -->
+    <string name="banner_1" translatable="false">ca-app-pub-1517962596069817/3294225751</string>
+    <!-- Test ID -->
+<!--    <string name="banner_1">ca-app-pub-3940256099942544/6300978111</string>-->
+
+    <string name="app_name">Noolagam</string>
+    <string name="email" translatable="false">hi@spidy.app</string>
+    <string name="category">Category</string>
+    <string name="explore">Explore</string>
+    <string name="book_cover_image">Book cover image</string>
+    <string name="others">Others</string>
+    <string name="feedback">Feedback</string>
+    <string name="share">Share…</string>
+    <string name="communication">Communication</string>
+    <string name="request_book">Request a Book</string>
+    <string name="submit_book">Send Your Book</string>
+    <string name="send_email">Send an Email</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="downloads">Downloads</string>
+    <string name="recently_read">Recently Read</string>
+    <string name="text_size">Text Size</string>
+    <string name="download">Download</string>
+    <string name="go_to_page">Go to Page</string>
+    <string name="apply">Apply</string>
+    <string name="cancel">Cancel</string>
+    <string name="page_number">Page Number</string>
+    <string name="go">Go</string>
+    <string name="there_is_no_page">There is no page number</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="ancient" translatable="false">Ancient</string>
+    <string name="art" translatable="false">Art</string>
+    <string name="articles" translatable="false">Articles</string>
+    <string name="biography" translatable="false">Biography</string>
+    <string name="children" translatable="false">Children</string>
+    <string name="religion" translatable="false">Religion</string>
+    <string name="comics" translatable="false">Comics</string>
+    <string name="cooking" translatable="false">Cooking</string>
+    <string name="drama" translatable="false">Drama</string>
+    <string name="fiction" translatable="false">Fiction</string>
+    <string name="history" translatable="false">History</string>
+    <string name="horror" translatable="false">Horror</string>
+    <string name="literary" translatable="false">Literary</string>
+    <string name="music" translatable="false">Music</string>
+    <string name="mystery" translatable="false">Mystery</string>
+    <string name="poetry" translatable="false">Poetry</string>
+    <string name="programming" translatable="false">Programming</string>
+    <string name="psychology" translatable="false">Psychology</string>
+    <string name="romance" translatable="false">Romance</string>
+    <string name="science" translatable="false">Science</string>
+    <string name="short_stories" translatable="false">Short Stories</string>
+    <string name="sports" translatable="false">Sports</string>
+    <string name="thriller" translatable="false">Thriller</string>
+    <string name="travel" translatable="false">Travel</string>
+    <string name="reset">Reset</string>
+    <string name="no_books_found">No books found</string>
+    <string name="info">Info</string>
+    <string name="got_it">Got it</string>
+    <string name="download_info_message" translatable="false">Downloading feature still under development, please wait for our next update</string>
+    <string name="try_again">Try again</string>
+    <string name="looking_for_a_book">Looking for a book…</string>
+</resources>

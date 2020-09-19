@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    android:id="@+id/headingView"
+    android:textColor="@color/colorBlack"
+    android:textStyle="bold"
+    android:textSize="24sp"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:paddingBottom="20dp"
+    tools:text="பொன்னியின் செல்வன்"
+    android:fontFamily="@font/tamil_bold"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools" />

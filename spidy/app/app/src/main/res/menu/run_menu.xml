@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/run" android:id="@+id/menuRun"/>
+    <item android:title="@string/runHeadless" android:id="@+id/menuRunHeadless"/>
+</menu>

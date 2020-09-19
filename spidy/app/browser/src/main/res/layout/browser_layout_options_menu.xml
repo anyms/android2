@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    card_view:cardUseCompatPadding="true"
+    card_view:cardElevation="3dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="200dp"
+    android:layout_width="match_parent"
+    android:background="@color/colorBrowserWhite"
+    android:layout_height="wrap_content" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent" android:layout_height="wrap_content">
+
+                <ImageView
+                    android:listSelector="@color/colorBrowserLightGray"
+                    android:clickable="true"
+                    android:paddingTop="14dp"
+                    android:paddingBottom="14dp"
+                    android:paddingStart="14dp"
+                    android:paddingEnd="14dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    card_view:srcCompat="@drawable/browser_page_info_icon"
+                    android:id="@+id/menuPageInfoImage"
+                    android:focusable="true"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"/>
+                <ImageView
+                    android:clickable="true"
+                    android:paddingTop="14dp"
+                    android:paddingBottom="14dp"
+                    android:paddingStart="14dp"
+                    android:paddingEnd="14dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp" card_view:srcCompat="@drawable/browser_refresh_icon"
+                    android:id="@+id/refreshImage" android:layout_weight="1" android:focusable="true"
+                    android:scaleType="fitCenter" android:adjustViewBounds="true"/>
+                <ImageView
+                    android:clickable="true"
+                    android:paddingTop="14dp"
+                    android:paddingBottom="14dp"
+                    android:paddingStart="14dp"
+                    android:paddingEnd="14dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp" card_view:srcCompat="@drawable/browser_arrow_back"
+                    android:id="@+id/menuGoBackImage" android:layout_weight="1" android:focusable="true"
+                    android:scaleType="fitCenter" android:adjustViewBounds="true"/>
+                <ImageView
+                    android:clickable="true"
+                    android:paddingTop="14dp"
+                    android:paddingBottom="14dp"
+                    android:paddingStart="14dp"
+                    android:paddingEnd="14dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp" card_view:srcCompat="@drawable/browser_arrow_forward"
+                    android:id="@+id/goForwardImage" android:focusable="true" android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:clickable="true"
+                android:textColor="@color/colorBrowserText"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:text="@string/share"
+                android:textSize="17sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/menuShare" android:focusable="true"/>
+
+            <TextView
+                android:clickable="true"
+                android:textColor="@color/colorBrowserText"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:text="@string/settings"
+                android:textSize="17sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/menuSettings" android:focusable="true"/>
+
+            <TextView
+                android:clickable="true"
+                android:textColor="@color/colorBrowserText"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:text="@string/feedback"
+                android:textSize="17sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/menuFeedback" android:focusable="true"/>
+
+            <TextView
+                android:clickable="true"
+                android:textColor="@color/colorBrowserText"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:text="@string/exit"
+                android:textSize="17sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/menuExit"
+                android:focusable="true"/>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.cardview.widget.CardView>

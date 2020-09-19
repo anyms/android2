@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menuSearch"
+        app:showAsAction="always"
+        android:title="@string/search"
+        android:icon="@drawable/ic_search"/>
+<!--    <item-->
+<!--        android:id="@+id/menuBucket"-->
+<!--        app:showAsAction="always"-->
+<!--        android:title="@string/memes_bucket"-->
+<!--        android:icon="@drawable/ic_bucket"/>-->
+    <item
+        android:id="@+id/menuFeedback"
+        android:title="@string/feedback"/>
+</menu>

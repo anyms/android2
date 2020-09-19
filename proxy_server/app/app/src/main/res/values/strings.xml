@@ -1,0 +1,25 @@
+<resources>
+    <!-- Banner Ad IDs -->
+    <string name="banner_1">ca-app-pub-1517962596069817/7151943239</string>
+    <!-- Test ID -->
+<!--    <string name="banner_1">ca-app-pub-3940256099942544/6300978111</string>-->
+
+    <string name="app_name">Proxy Server</string>
+    <string name="stop">Stop</string>
+    <string name="channel_description">Proxy Channel</string>
+    <string name="tap_to_add_a_website">Tap + to add a website</string>
+    <string name="clear_all">Clear All</string>
+    <string name="add">Add</string>
+    <string name="enter_a_domain">Enter a domain</string>
+    <string name="domain">domain</string>
+    <string name="scope">scope</string>
+    <string name="add_new_domain_message">Use * to add a scope to the domain. Example *facebook.com, scam.*.com</string>
+    <string name="remove">Remove</string>
+    <string name="copy">Copy</string>
+    <string name="edit">Edit</string>
+    <string name="configure">Configure</string>
+    <string name="feedback">Feedback</string>
+    <string name="share">Share…</string>
+    <string name="how_to_use">How to Use</string>
+    <string name="upgrade">Upgrade</string>
+</resources>

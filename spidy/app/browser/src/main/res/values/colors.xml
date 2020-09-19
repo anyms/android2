@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorBrowserWhite">#FFFFFF</color>
+    <color name="colorGreen">#3FB56C</color>
+    <color name="colorSemiGreen">#443FB56C</color>
+    <color name="colorBrowserText">#222222</color>
+    <color name="colorBrowserGray">#CCC</color>
+    <color name="colorBrowserDarkGray">#888</color>
+    <color name="colorBrowserLightGray">#EEE</color>
+
+    <color name="colorBrowserRed">#FF0000</color>
+    <color name="colorBrowserGreen">#4caf50</color>
+    <color name="colorBrowserOrange">#f57f17</color>
+</resources>

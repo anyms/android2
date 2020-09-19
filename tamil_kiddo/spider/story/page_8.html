@@ -1,0 +1,34 @@
+<div class="page-container-landscape story-page tamil" id="storyReader">
+<div class="sp_h_text_overlay1 has_illustration illustration">
+<img class="responsive_illustration" data-size1-src="https://storage.googleapis.com/story-weaver-e2e-production/illustration_crops/87900/size1/34da1fe19c14d3ae6ceab6c2694864a3.jpg" data-size2-src="https://storage.googleapis.com/story-weaver-e2e-production/illustration_crops/87900/size2/34da1fe19c14d3ae6ceab6c2694864a3.jpg" data-size3-src="https://storage.googleapis.com/story-weaver-e2e-production/illustration_crops/87900/size3/34da1fe19c14d3ae6ceab6c2694864a3.jpg" data-size4-src="https://storage.googleapis.com/story-weaver-e2e-production/illustration_crops/87900/size4/34da1fe19c14d3ae6ceab6c2694864a3.jpg" data-size5-src="https://storage.googleapis.com/story-weaver-e2e-production/illustration_crops/87900/size5/34da1fe19c14d3ae6ceab6c2694864a3.jpg" data-size6-src="https://storage.googleapis.com/story-weaver-e2e-production/illustration_crops/87900/size6/34da1fe19c14d3ae6ceab6c2694864a3.jpg" data-size7-src="https://storage.googleapis.com/story-weaver-e2e-production/illustration_crops/87900/size7/34da1fe19c14d3ae6ceab6c2694864a3.jpg" src="https://storage.googleapis.com/story-weaver-e2e-production/illustration_crops/87900/size4/34da1fe19c14d3ae6ceab6c2694864a3.jpg"/>
+</div>
+
+<div class="true pb-dictionary-tool-tip--padding" id="pb-dictionary-tool-tip"></div>
+<div class="text-font-normal tamil sp_h_text_overlay1 content" dir="auto">
+<p class="wysiwyg-text-align-center"><span class="text-font-normal"><span class="text-font-medium"><span class="text-font-normal"><b>ஆற்றல்:</b> நமக்கு </span></span>
+
+நகரவும், <span class="text-font-medium"><span class="text-font-normal">ஒன்றை செய்யவும் உதவுகிறது.</span></span></span></p>
+</div>
+
+
+
+<script>
+    const reader = document.querySelector("#storyReader");
+    const texts = document.querySelectorAll(".newStories");
+    const offsetTop = texts[1].offsetTop + texts[1].clientHeight;
+    const bottom = reader.clientHeight - offsetTop;
+    console.log("offsetTop", offsetTop);
+    console.log("bottom", bottom);
+
+    if (bottom < 0) {
+        texts[1].style.top = "auto";
+        texts[1].style.bottom = "10px";
+    }
+    </script><link href="style.css" rel="stylesheet"/><style>
+    @media only screen and (min-width: 960px) {
+        .page-container-landscape {
+            width: inherit;
+            height: inherit;
+        }
+    }
+    </style></div>

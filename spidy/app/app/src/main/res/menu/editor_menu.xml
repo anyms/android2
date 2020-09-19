@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/menuRotate"
+        android:title="@string/rotate"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_rotate"/>
+
+    <item android:id="@+id/menuRun"
+        android:title="@string/run"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_run"/>
+
+    <item android:id="@+id/menuSave"
+        android:title="@string/save"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_save"/>
+
+    <item android:id="@+id/menuUndo"
+        android:title="@string/undo"/>
+    <item android:id="@+id/menuRedo"
+        android:title="@string/redo"/>
+
+    <item android:id="@+id/menuInspector"
+        android:title="@string/inspector"/>
+
+    <item android:id="@+id/menuExit"
+        android:title="@string/exit"/>
+</menu>

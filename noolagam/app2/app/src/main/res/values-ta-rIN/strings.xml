@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">நூலகம்</string>
+    <string name="category">வகையினம்</string>
+    <string name="explore">அனைத்தும்</string>
+    <string name="book_cover_image">"புத்தக அட்டைப் படம் "</string>
+    <string name="others">மற்றவைகள்</string>
+    <string name="feedback">தங்களது கருத்து</string>
+    <string name="share">பகிர்…</string>
+    <string name="communication">தொடர்பு</string>
+    <string name="request_book">"ஒரு புத்தகத்தைக் கோருங்கள் "</string>
+    <string name="submit_book">"உங்கள் புத்தகத்தை அனுப்புங்கள் "</string>
+    <string name="send_email">"மின்னஞ்சல் அனுப்புங்கள் "</string>
+    <string name="home">முகப்பு</string>
+    <string name="search">தேடு</string>
+    <string name="downloads">தரவிறக்கி</string>
+    <string name="recently_read">"சமீபத்தில் படித்தது "</string>
+    <string name="text_size">எழுத்தின் அளவு</string>
+    <string name="download">தரவிறக்கு</string>
+    <string name="go_to_page">பக்கத்திற்கு செல்</string>
+    <string name="apply">உபயோகி</string>
+    <string name="cancel">ரத்துசெய்</string>
+    <string name="page_number">பக்க எண்</string>
+    <string name="go">போ</string>
+    <string name="there_is_no_page">பக்க எண் இல்லை</string>
+    <string name="dismiss">நிராகரி</string>
+    <string name="reset">மீட்டமை</string>
+    <string name="no_books_found">புத்தகங்கள் எதுவும் கிடைக்கவில்லை</string>
+    <string name="info">தகவல்</string>
+    <string name="got_it">அறிந்துகொண்டேன்</string>
+    <string name="try_again">மீண்டும் முயற்சி செய்</string>
+    <string name="looking_for_a_book">புத்தகத்தைத் தேடு…</string>
+</resources>

@@ -1,0 +1,32 @@
+<div class="page-container-landscape story-page tamil" id="storyReader">
+<div class="sp_h_text_overlay1 has_illustration illustration">
+<img class="responsive_illustration" data-size1-src="https://storage.googleapis.com/story-weaver-e2e-production/illustration_crops/87639/size1/cc59ed9b1c58aa1df3be50e2d2084fc6.jpg" data-size2-src="https://storage.googleapis.com/story-weaver-e2e-production/illustration_crops/87639/size2/cc59ed9b1c58aa1df3be50e2d2084fc6.jpg" data-size3-src="https://storage.googleapis.com/story-weaver-e2e-production/illustration_crops/87639/size3/cc59ed9b1c58aa1df3be50e2d2084fc6.jpg" data-size4-src="https://storage.googleapis.com/story-weaver-e2e-production/illustration_crops/87639/size4/cc59ed9b1c58aa1df3be50e2d2084fc6.jpg" data-size5-src="https://storage.googleapis.com/story-weaver-e2e-production/illustration_crops/87639/size5/cc59ed9b1c58aa1df3be50e2d2084fc6.jpg" data-size6-src="https://storage.googleapis.com/story-weaver-e2e-production/illustration_crops/87639/size6/cc59ed9b1c58aa1df3be50e2d2084fc6.jpg" data-size7-src="https://storage.googleapis.com/story-weaver-e2e-production/illustration_crops/87639/size7/cc59ed9b1c58aa1df3be50e2d2084fc6.jpg" src="https://storage.googleapis.com/story-weaver-e2e-production/illustration_crops/87639/size4/cc59ed9b1c58aa1df3be50e2d2084fc6.jpg"/>
+</div>
+
+<div class="true pb-dictionary-tool-tip--padding" id="pb-dictionary-tool-tip"></div>
+<div class="text-font-normal tamil sp_h_text_overlay1 content" dir="auto">
+<p class="wysiwyg-text-align-center"><span class="text-font-normal"><b>நான் நீந்துகிறேன்</b></span></p><p></p>
+</div>
+
+
+
+<script>
+    const reader = document.querySelector("#storyReader");
+    const texts = document.querySelectorAll(".newStories");
+    const offsetTop = texts[1].offsetTop + texts[1].clientHeight;
+    const bottom = reader.clientHeight - offsetTop;
+    console.log("offsetTop", offsetTop);
+    console.log("bottom", bottom);
+
+    if (bottom < 0) {
+        texts[1].style.top = "auto";
+        texts[1].style.bottom = "10px";
+    }
+    </script><link href="style.css" rel="stylesheet"/><style>
+    @media only screen and (min-width: 960px) {
+        .page-container-landscape {
+            width: inherit;
+            height: inherit;
+        }
+    }
+    </style></div>

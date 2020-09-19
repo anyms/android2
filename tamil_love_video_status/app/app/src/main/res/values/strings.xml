@@ -1,0 +1,25 @@
+<resources>
+    <!-- Banner Ad IDs -->
+    <string name="banner_1">ca-app-pub-1517962596069817/1871681456</string>
+    <!-- Test ID -->
+<!--    <string name="banner_1">ca-app-pub-3940256099942544/6300978111</string>-->
+
+    <string name="app_name">Love Status</string>
+    <string name="can_t_play_this_video">Can\'t play this video</string>
+    <string name="ok">OK</string>
+    <string name="exit">Exit</string>
+    <string name="settings">Settings</string>
+    <string name="cancel">Cancel</string>
+    <string name="downloading">Downloading…</string>
+    <string name="latest">Latest</string>
+    <string name="popular">Popular</string>
+    <string name="love_amp_romance"><![CDATA[Love & Romance]]></string>
+    <string name="comedy">Comedy</string>
+    <string name="motivational">Motivational</string>
+    <string name="cute">Cute</string>
+    <string name="dialogue">Dialogue</string>
+    <string name="search">Search</string>
+    <string name="no_videos">No videos</string>
+    <string name="channel_description">VidStatus Channel</string>
+    <string name="feedback">Feedback</string>
+</resources>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rootView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rounded_corner_white"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:textColor="@color/colorText"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:id="@+id/applyCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="18dp"
+            android:text="@string/apply_changes_instantly"
+            android:checked="true"
+            app:layout_constraintBottom_toTopOf="@+id/textSizeSlider"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <hearsilent.discreteslider.DiscreteSlider
+            android:id="@+id/textSizeSlider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingStart="16dp"
+            android:paddingTop="40dp"
+            android:paddingEnd="18dp"
+            android:paddingBottom="4dp"
+            app:ds_count="101"
+            app:ds_inactiveTrackColor="@color/colorDimWhite"
+            app:ds_maxProgress="100"
+            app:ds_minProgress="0"
+            app:ds_mode="normal"
+            app:ds_thumbColor="@color/colorAccent"
+            app:ds_thumbPressedColor="#88cccccc"
+            app:ds_thumbRadius="6dp"
+            app:ds_tickMarkColor="#3DFFFFFF"
+            app:ds_tickMarkDashLength="1dp"
+            app:ds_tickMarkInactiveColor="#ccc"
+            app:ds_tickMarkPatterns="dot,dash"
+            app:ds_trackColor="@color/colorAccent"
+            app:ds_trackWidth="4dp"
+            app:ds_valueLabelTextColor="#FFF"
+            app:ds_valueLabelTextSize="16sp"
+            app:ds_valueLabelVisible="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/applyBtn" />
+
+        <TextView
+            android:textColor="@color/colorText"
+            android:id="@+id/textTmp1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
+            android:text="@string/change_your_text_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textSizeSlider" />
+
+
+        <TextView
+            android:id="@+id/applyBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="18dp"
+            android:background="@drawable/rounded_corner_accent"
+            android:paddingStart="20dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="10dp"
+            android:text="@string/apply"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

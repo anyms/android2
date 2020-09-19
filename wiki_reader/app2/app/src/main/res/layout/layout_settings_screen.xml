@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_gravity="center"
+    android:background="@color/colorWhite"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:text="@string/know_the_unknown"
+            android:paddingBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:paddingBottom="10dp"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:text="@string/ask_the_wikipedia_in_your_own_language_using_your_voice_or_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/selectLanguageView"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textColor="@color/colorBlack"
+            android:background="@drawable/rounded_corners_with_border"
+            android:textSize="18sp"
+            android:text="Language: English"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/upgradeMsgView"
+            android:paddingBottom="10dp"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:text="@string/support_me_by_upgrading_and_enjoy_the_ad_free_experience"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/upgradeBtn"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textColor="@color/colorBlack"
+            android:background="@drawable/rounded_corners_with_border"
+            android:textSize="18sp"
+            android:text="@string/upgrade"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</ScrollView>

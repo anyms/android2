@@ -1,0 +1,32 @@
+<div class="page-container-landscape story-page tamil" id="storyReader">
+<div class="sp_h_text_overlay1 has_illustration illustration">
+<img class="responsive_illustration" data-size1-src="https://storage.googleapis.com/story-weaver-e2e-production/illustration_crops/87644/size1/9d64c8edca2eba90105425974a0cb73e.jpg" data-size2-src="https://storage.googleapis.com/story-weaver-e2e-production/illustration_crops/87644/size2/9d64c8edca2eba90105425974a0cb73e.jpg" data-size3-src="https://storage.googleapis.com/story-weaver-e2e-production/illustration_crops/87644/size3/9d64c8edca2eba90105425974a0cb73e.jpg" data-size4-src="https://storage.googleapis.com/story-weaver-e2e-production/illustration_crops/87644/size4/9d64c8edca2eba90105425974a0cb73e.jpg" data-size5-src="https://storage.googleapis.com/story-weaver-e2e-production/illustration_crops/87644/size5/9d64c8edca2eba90105425974a0cb73e.jpg" data-size6-src="https://storage.googleapis.com/story-weaver-e2e-production/illustration_crops/87644/size6/9d64c8edca2eba90105425974a0cb73e.jpg" data-size7-src="https://storage.googleapis.com/story-weaver-e2e-production/illustration_crops/87644/size7/9d64c8edca2eba90105425974a0cb73e.jpg" src="https://storage.googleapis.com/story-weaver-e2e-production/illustration_crops/87644/size4/9d64c8edca2eba90105425974a0cb73e.jpg"/>
+</div>
+
+<div class="true pb-dictionary-tool-tip--padding" id="pb-dictionary-tool-tip"></div>
+<div class="text-font-normal tamil sp_h_text_overlay1 content" dir="auto">
+<p class="wysiwyg-text-align-center"><span class="text-font-medium"><span class="text-font-normal"><b>உராய்வு: </b> ஒரு பரப்பு மற்றொன்றின் <br/>மேல் நகர முயலும்போது, வேகம் குறைபடுகிறது.</span></span></p>
+</div>
+
+
+
+<script>
+    const reader = document.querySelector("#storyReader");
+    const texts = document.querySelectorAll(".newStories");
+    const offsetTop = texts[1].offsetTop + texts[1].clientHeight;
+    const bottom = reader.clientHeight - offsetTop;
+    console.log("offsetTop", offsetTop);
+    console.log("bottom", bottom);
+
+    if (bottom < 0) {
+        texts[1].style.top = "auto";
+        texts[1].style.bottom = "10px";
+    }
+    </script><link href="style.css" rel="stylesheet"/><style>
+    @media only screen and (min-width: 960px) {
+        .page-container-landscape {
+            width: inherit;
+            height: inherit;
+        }
+    }
+    </style></div>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:paddingTop="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <NumberPicker
+        android:id="@+id/picker"
+        android:theme="@style/NumberPicker"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</FrameLayout>

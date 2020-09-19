@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menuCamera"
+        app:showAsAction="always"
+        android:title="@string/camera"
+        android:icon="@drawable/ic_camera"/>
+
+    <item
+        android:id="@+id/menuDuplicate"
+        app:showAsAction="always"
+        android:title="@string/duplicate"
+        android:icon="@drawable/ic_duplicate"/>
+
+    <item
+        android:id="@+id/menuAddItem"
+        app:showAsAction="always"
+        android:title="@string/add_item"
+        android:icon="@drawable/ic_add"/>
+<!--    <item-->
+<!--        android:id="@+id/menuSettings"-->
+<!--        app:showAsAction="ifRoom"-->
+<!--        android:title="@string/editor_settings"-->
+<!--        android:icon="@drawable/ic_settings"/>-->
+    <item
+        android:id="@+id/menuSave"
+        app:showAsAction="always"
+        android:title="@string/save_publish"
+        android:icon="@drawable/ic_save"/>
+
+    <item
+        android:id="@+id/menuUndo"
+        app:showAsAction="ifRoom"
+        android:title="@string/undo"
+        android:icon="@drawable/ic_undo"/>
+    <item
+        android:id="@+id/menuRedo"
+        app:showAsAction="ifRoom"
+        android:title="@string/redo"
+        android:icon="@drawable/ic_redo"/>
+    <item
+        android:id="@+id/menuShare"
+        app:showAsAction="ifRoom"
+        android:title="@string/share"
+        android:icon="@drawable/ic_share"/>
+</menu>

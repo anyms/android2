@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/ic_bookmark_dark"
+        android:title="@string/bookmark"
+        android:id="@+id/navBookmark"/>
+
+    <item android:title="@string/others">
+        <menu>
+            <item
+                android:icon="@drawable/ic_share"
+                android:title="@string/feedback"
+                android:id="@+id/navFeedback"/>
+            <item
+                android:icon="@drawable/ic_feedback"
+                android:title="@string/share"
+                android:id="@+id/navShare"/>
+        </menu>
+    </item>
+</menu>

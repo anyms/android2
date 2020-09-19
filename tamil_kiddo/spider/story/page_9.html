@@ -1,0 +1,32 @@
+<div class="page-container-landscape story-page tamil" id="storyReader">
+<div class="sp_h_i100 has_illustration illustration">
+<img class="responsive_illustration" data-size1-src="https://storage.googleapis.com/story-weaver-e2e-production/illustration_crops/87646/size1/e1817bdd0cdb9d54daa92f7f23c51604.jpg" data-size2-src="https://storage.googleapis.com/story-weaver-e2e-production/illustration_crops/87646/size2/e1817bdd0cdb9d54daa92f7f23c51604.jpg" data-size3-src="https://storage.googleapis.com/story-weaver-e2e-production/illustration_crops/87646/size3/e1817bdd0cdb9d54daa92f7f23c51604.jpg" data-size4-src="https://storage.googleapis.com/story-weaver-e2e-production/illustration_crops/87646/size4/e1817bdd0cdb9d54daa92f7f23c51604.jpg" data-size5-src="https://storage.googleapis.com/story-weaver-e2e-production/illustration_crops/87646/size5/e1817bdd0cdb9d54daa92f7f23c51604.jpg" data-size6-src="https://storage.googleapis.com/story-weaver-e2e-production/illustration_crops/87646/size6/e1817bdd0cdb9d54daa92f7f23c51604.jpg" data-size7-src="https://storage.googleapis.com/story-weaver-e2e-production/illustration_crops/87646/size7/e1817bdd0cdb9d54daa92f7f23c51604.jpg" src="https://storage.googleapis.com/story-weaver-e2e-production/illustration_crops/87646/size4/e1817bdd0cdb9d54daa92f7f23c51604.jpg"/>
+</div>
+
+<div class="true pb-dictionary-tool-tip--padding" id="pb-dictionary-tool-tip"></div>
+<div class="text-font-normal tamil sp_h_i100 content" dir="auto">
+</div>
+
+<div data-story-read-id="" data-story-title="50264-vilaiyaaduvom-vaanga" id="lastSPage"></div>
+
+
+<script>
+    const reader = document.querySelector("#storyReader");
+    const texts = document.querySelectorAll(".newStories");
+    const offsetTop = texts[1].offsetTop + texts[1].clientHeight;
+    const bottom = reader.clientHeight - offsetTop;
+    console.log("offsetTop", offsetTop);
+    console.log("bottom", bottom);
+
+    if (bottom < 0) {
+        texts[1].style.top = "auto";
+        texts[1].style.bottom = "10px";
+    }
+    </script><link href="style.css" rel="stylesheet"/><style>
+    @media only screen and (min-width: 960px) {
+        .page-container-landscape {
+            width: inherit;
+            height: inherit;
+        }
+    }
+    </style></div>
